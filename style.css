@@ -1,0 +1,116 @@
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    overflow:hidden;
+    text-align:center;
+  }
+  
+  .screen{
+    display:none;
+    min-height:100vh;
+    padding:30px 20px;
+    box-sizing:border-box;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+  
+  .screen.active{display:flex}
+  
+  /* 🌈 SCREEN 1 */
+  #screen1{
+    background:linear-gradient(135deg,#ff9a9e,#fad0c4,#c1d9ff);
+    background-size:400% 400%;
+    animation:grad 8s ease infinite;
+    color:white;
+  }
+  @keyframes grad{
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+  
+  h1{
+    font-size:2.7rem;
+    text-shadow:0 0 15px rgba(255,255,255,.6);
+  }
+  
+  p{
+    font-size:1.15rem;
+    max-width:720px;
+    line-height:1.8;
+  }
+  
+  button{
+    margin-top:25px;
+    padding:15px 35px;
+    font-size:1.1rem;
+    border:none;
+    border-radius:40px;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+  }
+  
+  .open-btn{
+    background:white;
+    color:#ff6fae;
+  }
+  
+  /* ❤️ HEARTS */
+  .heart{
+    position:absolute;
+    bottom:-20px;
+    font-size:24px;
+    animation:float 6s linear infinite;
+  }
+  @keyframes float{
+    0%{transform:translateY(0);opacity:1}
+    100%{transform:translateY(-110vh);opacity:0}
+  }
+  
+  /* SCREEN 2 */
+  #screen2{
+    background:linear-gradient(135deg,#ffd1dc,#fff);
+    color:#333;
+  }
+  
+  /* SCREEN 3 */
+  #screen3{
+    background:linear-gradient(135deg,#c1d9ff,#ffd1dc);
+    color:#333;
+  }
+  
+  .troll-btn{
+    background:#ff6fae;
+    color:white;
+    position:relative;
+  }
+  
+  /* SCREEN 4 */
+  #screen4{
+    background:radial-gradient(circle,#111,#000);
+    color:white;
+  }
+  
+  #screen4 h1{
+    font-size:3.3rem;
+    color:#ff6fae;
+    animation:shake .8s infinite;
+  }
+  @keyframes shake{
+    0%{transform:rotate(0)}
+    25%{transform:rotate(2deg)}
+    50%{transform:rotate(-2deg)}
+    75%{transform:rotate(2deg)}
+    100%{transform:rotate(0)}
+  }
+  
+  .funny-photo{
+    margin-top:25px;
+    width:190px;
+    height:240px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 0 25px rgba(255,111,174,.6);
+  }
+  
